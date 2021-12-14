@@ -1,0 +1,48 @@
+void main() {
+
+  
+  var string = 'today is cloudy and sad';
+  var char = 'c';
+  var count = 0;
+  
+  
+  //part 1
+  print("part 1");
+  for(int i=0;i<string.length;i++){
+    
+    if(string[i] != " "){
+      count++;
+    }else{
+      
+    }
+  }
+  print(count.toString() + "\n");
+  //////////////////////////////////////////////
+  //part 2
+  print("part 2 \n");
+  for(int i=0;i<string.length;i++){
+    
+    print(string[i]);
+  }
+  ///////////////////////////////////////////////
+  //part 3
+  print("\npart 3");
+  for(int i=0;i<string.length;i++){
+    
+    if(string[i] == char)
+    {
+      print("the char exists" + '\t'+ '(' + string[i] + ')');
+      break;
+    }
+  }
+  //////////////////////////////////////////////
+  //part 4
+  print("\npart 4");
+  var new_string = '';
+  var ln = string.length - 1;
+  while(ln >= 0){
+    new_string += string[ln];
+    ln--;
+  }
+  print(new_string);
+  }
